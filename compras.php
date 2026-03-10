@@ -17,7 +17,17 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <h1>Cadastrar Compra</h1>
+        <header>
+        <nav>
+            <ul class="menu">
+                <li><a href="index.php">Início</a></li>
+                <li><a href="compras.php">Cadastrar Compras</a></li>
+                <li><a href="dividendos.php">Cadastrar Dividendos</a></li>
+                <li><a href="relatorio.php">Relatório</a></li>
+                <li><a href="cadastro.php">Cadastrar Funcionário</a></li>
+            </ul>
+        </nav>
+    </header>
     <form method="POST">
         <label>Ativo:</label>
         <input type="text" name="ativo" required><br>
