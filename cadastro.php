@@ -1,3 +1,14 @@
+<?php
+    require_once 'classes/Cadastro.php';
+    $cadastro = new Cadastro();
+?>
+<?php
+    if ($_SERVER['REQUEST_METHOD'] === 'POST') {
+        $cadastro->adicionarFuncionario($_POST['nome'], $_POST['email'], $_POST['idade'], $_POST['cargo'], $_POST['salario'], $_POST['senha']);
+        echo "Funcionário cadastrado com sucesso!";
+    }
+?>
+
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>

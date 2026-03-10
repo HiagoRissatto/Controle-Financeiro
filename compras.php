@@ -9,7 +9,7 @@
 ?>
 
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ptbr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -17,17 +17,7 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-        <header>
-        <nav>
-            <ul class="menu">
-                <li><a href="index.php">Início</a></li>
-                <li><a href="compras.php">Cadastrar Compras</a></li>
-                <li><a href="dividendos.php">Cadastrar Dividendos</a></li>
-                <li><a href="relatorio.php">Relatório</a></li>
-                <li><a href="cadastro.php">Cadastrar Funcionário</a></li>
-            </ul>
-        </nav>
-    </header>
+<?php include 'partials/header.php'; ?>
     <form method="POST">
         <label>Ativo:</label>
         <input type="text" name="ativo" required><br>
@@ -39,5 +29,6 @@
         <input type="date" name="data_compra" required><br>
         <button type="submit">Cadastrar</button>
     </form>
+<?php include 'partials/footer.php'; ?>
 </body>
 </html>

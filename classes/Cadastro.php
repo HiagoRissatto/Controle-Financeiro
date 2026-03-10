@@ -8,7 +8,7 @@ class Cadastro {
         $this->db = (new Database())->connect();
     }
 
-    public function adicionarUsuario($nome, $email, $idade, $cargo, $salario, $senha) {
+    public function adicionarFuncionario($nome, $email, $idade, $cargo, $salario, $senha) {
         $sql = "INSERT INTO usuarios (nome, email, idade, cargo, salario, senha) VALUES (:nome, :email, :idade, :cargo, :salario, :senha)";
         $stmt = $this->db->prepare($sql);
         $stmt->execute([
@@ -21,7 +21,7 @@ class Cadastro {
         ]);
     }
 
-    public function listarUsuarios() {
+    public function listarFuncionarios() {
         $sql = "SELECT * FROM usuarios";
         $stmt = $this->db->query($sql);
         return $stmt->fetchAll(PDO::FETCH_ASSOC);
