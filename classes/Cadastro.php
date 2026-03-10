@@ -8,8 +8,8 @@ class Cadastro {
         $this->db = (new Database())->connect();
     }
 
-    public function adicionarFuncionario($nome, $email, $idade, $cargo, $salario, $senha) {
-        $sql = "INSERT INTO usuarios (nome, email, idade, cargo, salario, senha) VALUES (:nome, :email, :idade, :cargo, :salario, :senha)";
+    public function adicionarFuncionario($nome, $email, $idade, $cargo, $salario) {
+        $sql = "INSERT INTO funcionarios (nome, email, idade, cargo, salario) VALUES (:nome, :email, :idade, :cargo, :salario)";
         $stmt = $this->db->prepare($sql);
         $stmt->execute([
             'nome' => $nome,
@@ -17,7 +17,7 @@ class Cadastro {
             'idade' => $idade,
             'cargo' => $cargo,
             'salario' => $salario,
-            'senha' => password_hash($senha, PASSWORD_BCRYPT)
+            
         ]);
     }
 
