@@ -6,6 +6,7 @@
                 <li><a href="dividendos.php">Cadastrar Dividendos</a></li>
                 <li><a href="relatorio.php">Relatório</a></li>
                 <li><a href="cadastro.php">Cadastrar Funcionário</a></li>
+                <li><a href="funcionario.php">Funcionários</a></li>
             </ul>
         </nav>
     </header>

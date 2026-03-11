@@ -22,7 +22,7 @@ class Cadastro {
     }
 
     public function listarFuncionarios() {
-        $sql = "SELECT * FROM usuarios";
+        $sql = "SELECT * FROM funcionarios";
         $stmt = $this->db->query($sql);
         return $stmt->fetchAll(PDO::FETCH_ASSOC);
     }

@@ -44,7 +44,6 @@ header nav .menu li a:hover {
     border-radius: 5px;
 }
 
-
 main {
     max-width: 1200px;
     margin: 20px auto;
@@ -151,3 +150,21 @@ form h1 {
     margin-bottom: 20px;
     color: #004d99;
 }
+
+.container {
+    text-align: center;
+}
+
+/* Estilo para tabelas */
+table {
+    display: inline-block;
+}
+th, td {
+    padding: 10px;
+    text-align: center;
+}
+
+.tabela {
+
+}
+
