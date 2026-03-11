@@ -157,14 +157,8 @@ form h1 {
 
 /* Estilo para tabelas */
 table {
-    display: inline-block;
-}
-th, td {
-    padding: 10px;
-    text-align: center;
-}
-
-.tabela {
-
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
 }
 
